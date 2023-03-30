@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul,
+ol {
+    list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+    max-width: 100%;
+    vertical-align: middle;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.list img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.load {
+    position: fixed;
+    inset: 0 0 0 0;
+    background: #333;
+    color: #fff;
+    font-size: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
