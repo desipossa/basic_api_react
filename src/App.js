@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './app.css';
+import './App.css';
 
 // 픽사베이 데이타 가져온다. 시간이 거릴거야... , 문자로만 주고받아라 원칙(json); 
 // json --> json encode
